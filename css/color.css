@@ -1,0 +1,27 @@
+table{
+  border-collapse: collapse;
+}
+table, tbody, th{
+  border: 0.5px solid black;
+}
+td{
+  border-left: 0.1px solid #e2e2e2;
+}
+td.sig:nth-child(10n+1){
+  border-left: 0.5px solid black; 
+}
+td.nosig:nth-child(10n+3){
+  border-left: 0.5px solid black; 
+}
+.Red{
+	background-color: Red;
+}
+.Yellow{
+	background-color: Yellow;
+}
+.Green{
+	background-color: Green;
+}
+.None{
+	background-color: white;
+}

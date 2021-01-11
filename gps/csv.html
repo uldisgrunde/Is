@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<html lang="lv">
+	<head>
+		<meta charset="UTF-8">
+		<title>Javascript CSV</title>
+		<script src="./../js/csv.js"></script> 
+	</head>
+<body>
+<form enctype="multipart/form-data">
+	Izvēlies datni ko parādīt..:<br>
+	<input type="file" id="file" accept=".csv"><br>
+	<input type="button" value="Uzladēt HVI" onclick="viewCSV()">
+</form>
+	<table border=1>
+			<thead>
+				<th>N#</th>
+				<th onclick="order('dati',1)">
+					<input type="text" placeholder="Datums no:" onchange="filter('dati',this,1)" >
+				</th>
+				<th onclick="order('dati',2)">
+					<input type="text" placeholder="Laiks no:" onchange="filter('dati',this,2)" >
+				</th>
+				<th onclick="order('dati',3)">
+					<input type="text" placeholder="Datums līdz:" onchange="filter('dati',this,3)" >
+				</th>
+				<th onclick="order('dati',4)">
+					<input type="text" placeholder="Laiks līdz:" onchange="filter('dati',this,4)" >
+				</th>
+				<th onclick="order('dati',5)">
+					<input type="text" placeholder="Adrese no:" onchange="filter('dati',this,5)" >
+				</th>
+				<th onclick="order('dati',6)">
+					<input type="text" placeholder="Adrese līdz:" onchange="filter('dati',this,6)" >
+				</th>
+				<th onclick="order('dati',7)">
+					<input type="text" placeholder="Odometrs no:" onchange="filter('dati',this,7)" >
+				</th>
+				<th onclick="order('dati',8)">
+					<input type="text" placeholder="Odometrs līdz:" onchange="filter('dati',this,8)" >
+				</th>
+				<th>+/-</th>
+			</thead>
+			<tbody id="dati">
+			</tbody>
+	</table>
+</body>
+</html>

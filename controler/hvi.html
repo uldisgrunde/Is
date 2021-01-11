@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="lv">
+   <head>
+      <meta charset="UTF-8">
+      <title>HVI</title>
+      <link rel="icon" type="image/png" href="./../img/favicon.ico">
+      <script src="./../js/hvi.js"></script> 
+      <script src="./../js/edit.js"></script> 
+      <script src="./../js/filter_sort.js"></script>
+	  <style type="text/css">
+		input[type="text"] {width: 96%;height:100%} 
+	  </style>
+   </head>
+   <body>
+      <form enctype="multipart/form-data">
+         <label>Izvēlies datni ko parādīt:</label>
+		 <br>
+         <input type="file" id="file" accept=".hvi" onchange="viewHVI('dati')" style="visibility:hidden; width:0px">
+		 <input type="button" value="Meklēt" onclick="document.getElementById('file').click()">
+		 <input type="button" value="Uzladēt HVI" onclick="viewHVI('dati')">
+		 
+      </form>
+      <table border=1>
+         <thead>
+            <tr>
+               <th>Datums</th>
+               <th>Laiks</th>
+               <th>Kods</th>
+               <th>Kļūda</th>
+               <th>Statuss</th>
+            </tr>
+         </thead>
+         <tbody id="dati">
+         </tbody>
+      </table>
+   </body>
+</html>

@@ -1,0 +1,73 @@
+{
+	"cross": [
+		{
+		 "name": "Rīgas-Kalnciema-Garozas",
+		 "cycle": 81,
+		 "yellow": 3,
+		 "red": 1,
+		 "amber": 2
+		}
+	],
+	"signal":[ 
+	{
+	      "name": "V1",
+	      "time": "24",
+	      "offset": "51",
+	      "type": "V"
+	   },
+	 {
+	      "name": "V4",
+	      "time": "34",
+	      "offset": "0",
+	      "type": "V"
+	   },
+	 {
+	      "name": "V5",
+	      "time": "10",
+	      "offset": "0",
+	      "type": "A"
+	},
+	 {
+	      "name": "V7",
+	      "time": "24",
+	      "offset": "51",
+	      "type": "V"
+	},
+	 {
+	      "name": "V10",
+	      "time": "30",
+	      "offset": "15",
+	      "type": "V"
+	},
+	 {
+	      "name": "V10Cross",
+	      "time": "8",
+	      "offset": "37",
+	      "type": "C"
+	},
+	 {
+	      "name": "GP1",
+	      "time": "27",
+	      "offset": "0",
+	      "type": "P"
+	},
+	 {
+	      "name": "GP4",
+	      "time": "21",
+	      "offset": "51",
+	      "type": "P"
+	},
+	 {
+	      "name": "GP7",
+	      "time": "27",
+	      "offset": "0",
+	      "type": "P"
+	},
+	 {
+	      "name": "GP10",
+	      "time": "21",
+	      "offset": "51",
+	      "type": "P"
+	}]
+
+}
