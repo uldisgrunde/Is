@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="LV">
+<head>
+  <title>Informatīvā sistēma</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<style>
+body{
+ /*background:url("./../img/cars.png") center no-repeat;*/
+ height:100vh;
+ background-size:cover;
+}
+.iframe-container {
+  position: relative;
+  margin: 5px;
+  height: 0;
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #7a8b8b;
+  /* put following styles (necessary for overflow and
+  scrolling handling) in div container around iframe
+  because not stable in CSS
+  -webkit-overflow-scrolling: touch;
+  overflow: auto; */
+}
+.iframe-container-for-wxh-500x350 {
+  padding: 10px 10px 70% 10px; /* padding-bottom = h/w as a % */
+}
+.slept{
+    background-color: #C0C0C0;
+}
+}
+</style>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+  <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Maršuta žurnāls<span 
+	  class="caret"></span></a>
+        <ul class="dropdown-menu">
+			<li><a href="./gps/gps.html" target="iframe1">Apskatest žurnāls</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Kontoliera žurnāls<span 
+	  class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="./logbook/hvi.html" target="iframe1">Atlasīt datus</a></li>
+       </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Notikumu žurnāls<span   
+	  class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="./report/report.html" target="iframe1">Žurnāls</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Noliktava<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+        <li><a href="" target="iframe1">Pieprasījums</a></li>
+         </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Luksofora objekti<span 
+	  class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="" target="iframe1">Objekti</a></li>
+       </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Luksofora programmas<span 
+	  class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Programmas</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Skaitītāja rādījumi<span 
+	  class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="./metter/meter.html" target="iframe1">Ievade (Angular)</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="iframe-container iframe-container-for-wxh-500x350"
+     style="-webkit-overflow-scrolling: touch; overflow: auto;">
+ <iframe name='iframe1' id='link'  style="border:none;height:100%;width:100%"></iframe>
+</div>
+</body>
+</html>
